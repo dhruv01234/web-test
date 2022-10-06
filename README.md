@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .left {
+            left: 2px;
+            height: 30px;
+            width: 16%;
+            display: flex;
+        }
+
+        .mid {
+            height: 29px;
+            width: 48%;
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        .right {
+            right: 0px;
+            height: 30px;
+            width: 25%;
+        }
+
+      
+
+        .navtag {
+            display: inline-block;
+            margin-left: 15px;
+            font-size: 20px;
+
+        }
+        .navitem a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navitem a:hover {
+            color: rgb(65, 226, 238);
+        }
+
+      
+
+        .logo {
+            padding: 0px 31px;
+            margin-top: 15px;
+            width: 50px;
+            display: inline-block;
+            height: 30px;
+        }
+
+    
+
+       
+        .navbtn {
+            background-color: rgb(36, 13, 13);
+            color: rgb(65, 226, 238);
+            border: 2px solid rgb(65, 226, 238);
+            border-radius:20px;
+            height: 40px;
+            transition: 1s;
+            transition-timing-function: ease-out;
+            width: 120px;
+            margin-top: 10px;
+            margin-left: 136px;
+
+        }
+
+        .navbtn:hover {
+            background-color: rgb(65, 226, 238);
+            border-color: rgb(36, 13, 13);
+            color: rgb(36, 13, 13);
+            cursor: pointer;
+        }
+       
+       .home{    
+        height: 91px;
+        width: 90%;
+        border-radius: 20px;
+        background-color: rgb(255, 234, 237);
+        color: black;
+        padding-top: 8px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        display: block;
+        margin: 79px auto;
+        margin-bottom: 0px;
+        
+        
+       }
+.menulist{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 150px;
+}
+.item{
+    margin: 30px;
+    height: 180px;
+}
+.img{
+    
+    border-radius: 15px;
+}
+.item:hover{
+       
+}
+      #img1:hover{
+        
+        background: #C33764;
+        
+      }
+      #img2:hover{
+        
+    }
+    
+    #img5:hover{
+        
+    }
+    #img6:hover{
+        
+    }
+        
+        .navbar {
+            z-index: 1;
+            top:0;
+            height: 60px;
+            width: 100%;
+            background-color: rgb(36, 13, 13);
+            display: flex;
+            justify-content: space-evenly;
+            position: fixed;
+        }
+       
+        .item:hover {
+            opacity: 0.4;
+            cursor: pointer;
+            
+        }
+        
+        .foot{
+            background: url("images/home-img.jpeg");
+            background-size: 100%;
+            margin-top: 30px;
+            height: 300px;
+            width: 100%;
+            opacity: 0.6;
+        }
+        .overimg{
+            display: absolute;
+            top: 0px;
+        }
+        .footbtn{
+            display: block;
+            width: 100px;
+            margin: auto;
+            background-color: transparent;
+            
+        }
+        
+footer{
+    /* height: 50vh; */
+    color: white;
+    background-color: rgb(36, 13, 13);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 70px 20px;
+}
+
+.photo,.contact,.news{
+    width: 400px;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+.photo h3,.contact h3,.news h3{
+    padding: 20px;
+}
+.photo p,.contact p,.news p{
+    padding: 10px;
+    opacity: .7;
+}
+.news input{
+    width: 300px;
+    height: 40px;
+    background-color:transparent;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0px;
+}
+#cards{
+    text-decoration: none;
+}
+@media screen and (max-width:900px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    main{
+        padding: 200px 50px;
+    }
+}
+@media screen and (max-width:500px ){
+    .cards{
+        grid-template-columns : 1fr;
+    }
+    main{
+        padding: 250px 10px;
+    }
+    .menu{
+        margin-bottom: 20px;
+    }
+    .start{
+        display: block;
+        height: 100px;
+        width: 50%;
+        margin: auto;
+    }
+   
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      
+}
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="left">
+            
+            <img src="images/logo.png" alt="" class="logo">
+            <h2 style="display: inline-bock;color:white;padding-top:15px;">IMAGE</h2>
+            
+        </nav>
+        <div class="mid">
+            <ul class="navitem">
+                <li class="navtag"><a href="#home">Home</a></li>
+                <li class="navtag"><a href="#about">About</a></li>
+                <li class="navtag"><a href="#menu">Menu</a></li>
+                <li class="navtag"><a href="#products">Products</a></li>
+                <li class="navtag"><a href="#review">Review</a></li>
+                <li class="navtag"><a href="#contact">Contact</a></li>
+                <li class="navtag"><a href="#blog">Blog</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="navbtn">
+                <b>Book Trial</b>
+            </button>
+        </div>
+    </header>
+        <menu>
+            <div class="home">
+                <h1 style="color:rgb(9, 9, 182)"><b>Photograpger's Blog</b></h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, aperiam.</h3>
+            </div>
+        </menu>
+            <section id="menu">
+                <div class="menulist">
+                    <div class="item">
+                        <img  class="img" id="img1" src="images/img6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="img" id="img2"src="images/img6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="img" id="img3"src="images/img6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="img" id="img4"src="images/img6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="img" id="img5"src="images/img6.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="img" id="img6"src="images/img6.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="foot">
+                <div class="start">
+                    <h2 style="color:rgb(61, 200, 242); text-align:center;font-size:40px;padding-top:12px">Start Your Journey!</h2>
+                    <h1 style="color:white; text-align:center;font-size:x-large;padding-top:12px">Let's Capture this world</h1>
+                    <div style="max-width: 400px;display:block;margin:auto">
+                        <p style="color:white; text-align:center;color:rgb(152, 150, 150);padding-top:20px;margin-bottom:20px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eaque
+                            deserunt laborum laudantium est? Eius accusant Lorem ipsum dolor sit amet, consec
+                            tetur adipisicing elit. Nihil, impedit?</p>
+                    </div>
+                        
+                            <button class="navbtn footbtn">
+                                <b>Book Trial</b>
+                            </button>
+                         
+        
+                </div>
+            </section>
+            <footer id="contact">
+                <div class="photo">
+                    <a href="#cards"><h3>Photography</h3></a>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div>
+                       <a href="#" class="fa fa-facebook"></a>
+                        <!-- <a href="#" class="fa fa-twitter"></a> -->
+                    </div>
+                </div>
+                <div class="contact">
+                    <h3>Contact Info</h3>
+                    <p>dhruv.modi_cs20@gla.ac.in</p>
+                    <p>201500222</p>
+                    <p>Mathura,281001</p>
+                </div>
+                <div class="news">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our Newsletter</p>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <div class="book">Subscribe</div>
+                </div>
+            </footer>
+</body>
+
+</html>
