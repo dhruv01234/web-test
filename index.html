@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
+        body{
+            background: url("images/home-img.jpeg");
+            background-attachment: fixed;
+        }
         *{
             margin: 0px;
             padding: 0px;
@@ -94,7 +99,7 @@
         padding-bottom: 0px;
         padding-left: 10px;
         display: block;
-        margin: 79px auto;
+        margin: 48px auto;
         margin-bottom: 0px;
         
         
@@ -104,32 +109,17 @@
     flex-wrap: wrap;
     margin-left: 150px;
 }
+
 .item{
     margin: 30px;
     height: 180px;
+    transition: 1s;
 }
 .img{
     
     border-radius: 15px;
 }
-.item:hover{
-       
-}
-      #img1:hover{
-        
-        background: #C33764;
-        
-      }
-      #img2:hover{
-        
-    }
     
-    #img5:hover{
-        
-    }
-    #img6:hover{
-        
-    }
         
         .navbar {
             z-index: 1;
@@ -142,14 +132,9 @@
             position: fixed;
         }
        
-        .item:hover {
-            opacity: 0.4;
-            cursor: pointer;
-            
-        }
         
+
         .foot{
-            background: url("images/home-img.jpeg");
             background-size: 100%;
             margin-top: 30px;
             height: 300px;
@@ -182,6 +167,11 @@ footer{
     width: 400px;
     padding: 10px 20px;
     font-size: 22px;
+}
+menu{
+    padding-top: 40px;
+    background-color: white;
+    padding-bottom: 30px;
 }
 .photo h3,.contact h3,.news h3{
     padding: 20px;
@@ -226,6 +216,53 @@ footer{
         width: 50%;
         margin: auto;
     }
+   
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: red;
+      }
+      
+      .item:hover .overlay {
+        opacity: 1;
+      }
+      
+      .icon {
+        color: white;
+        font-size: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
 }
     </style>
 </head>
@@ -261,12 +298,16 @@ footer{
                 <h1 style="color:rgb(9, 9, 182)"><b>Photograpger's Blog</b></h1>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, aperiam.</h3>
             </div>
-        </menu>
             <section id="menu">
                 <div class="menulist">
                     <div class="item">
                         <img  class="img" id="img1" src="images/img6.png" alt="">
-                    </div>
+                        <div class="overlay">
+                            <a href="#" class="icon" title="User Profile">
+                              <i class="fa fa-user"></i>
+                            </a>
+                          </div>
+                   </div>
                     <div class="item">
                         <img class="img" id="img2"src="images/img6.png" alt="">
                     </div>
@@ -284,6 +325,8 @@ footer{
                     </div>
                 </div>
             </section>
+        </menu>
+          
             <section class="foot">
                 <div class="start">
                     <h2 style="color:rgb(61, 200, 242); text-align:center;font-size:40px;padding-top:12px">Start Your Journey!</h2>
@@ -306,6 +349,10 @@ footer{
                     <a href="#cards"><h3>Photography</h3></a>
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet.</p>
+                    <div>
+                       <a href="#" class="fa fa-facebook"></a>
+                        <!-- <a href="#" class="fa fa-twitter"></a> -->
+                    </div>
                 </div>
                 <div class="contact">
                     <h3>Contact Info</h3>
