@@ -38,6 +38,7 @@
         .navtag {
             display: inline-block;
             margin-left: 15px;
+            font-size: 20px;
 
         }
         .navitem a {
@@ -53,10 +54,10 @@
 
         .logo {
             padding: 0px 31px;
-            margin-top: 10px;
-            width: 90px;
+            margin-top: 15px;
+            width: 50px;
             display: inline-block;
-            height: 50px;
+            height: 30px;
         }
 
     
@@ -71,7 +72,8 @@
             transition: 1s;
             transition-timing-function: ease-out;
             width: 120px;
-            margin-top: 30px;
+            margin-top: 10px;
+            margin-left: 136px;
 
         }
 
@@ -83,16 +85,17 @@
         }
        
        .home{    
-        height: 30px;
-        width: 83%;
+        height: 91px;
+        width: 90%;
         border-radius: 20px;
         background-color: rgb(255, 234, 237);
         color: black;
         padding-top: 8px;
-        padding-bottom: 48px;
+        padding-bottom: 0px;
         padding-left: 10px;
-        margin-top: 110px;
-        margin-left: 139px
+        display: block;
+        margin: 79px auto;
+        margin-bottom: 0px;
         
         
        }
@@ -131,8 +134,7 @@
         .navbar {
             z-index: 1;
             top:0;
-            margin: 0 1em;
-            height: 80px;
+            height: 60px;
             width: 100%;
             background-color: rgb(36, 13, 13);
             display: flex;
@@ -162,6 +164,7 @@
             display: block;
             width: 100px;
             margin: auto;
+            background-color: transparent;
             
         }
         
@@ -214,6 +217,15 @@ footer{
     main{
         padding: 250px 10px;
     }
+    .menu{
+        margin-bottom: 20px;
+    }
+    .start{
+        display: block;
+        height: 100px;
+        width: 50%;
+        margin: auto;
+    }
 }
     </style>
 </head>
@@ -223,7 +235,7 @@ footer{
         <nav class="left">
             
             <img src="images/logo.png" alt="" class="logo">
-            <h2 style="display: inline-bock;color:white;padding-top:30px">IMAGE</h2>
+            <h2 style="display: inline-bock;color:white;padding-top:15px;">IMAGE</h2>
             
         </nav>
         <div class="mid">
@@ -240,7 +252,7 @@ footer{
         </div>
         <div class="right">
             <button class="navbtn">
-                Book Trial
+                <b>Book Trial</b>
             </button>
         </div>
     </header>
@@ -273,17 +285,19 @@ footer{
                 </div>
             </section>
             <section class="foot">
-                <div >
-                            <h2 style="color:rgb(61, 200, 242); text-align:center">Start Your Journey!</h2>
-                            <h1 style="color:white; text-align:center;font-size:xx-large">Let's Capture this world</h1>
-                            <h4 style="color:white; text-align:center;color:rgb(152, 150, 150)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eaque
-                                 deserunt laborum laudantium est? Eius accusant Lorem ipsum dolor sit amet, consec
-                                 tetur adipisicing elit. Nihil, impedit?</h4>
-                                 <div class="footbtn">
-                                    <button class="navbtn">
-                                        Book Trial
-                                    </button>
-                                 </div>
+                <div class="start">
+                    <h2 style="color:rgb(61, 200, 242); text-align:center;font-size:40px;padding-top:12px">Start Your Journey!</h2>
+                    <h1 style="color:white; text-align:center;font-size:x-large;padding-top:12px">Let's Capture this world</h1>
+                    <div style="max-width: 400px;display:block;margin:auto">
+                        <p style="color:white; text-align:center;color:rgb(152, 150, 150);padding-top:20px;margin-bottom:20px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eaque
+                            deserunt laborum laudantium est? Eius accusant Lorem ipsum dolor sit amet, consec
+                            tetur adipisicing elit. Nihil, impedit?</p>
+                    </div>
+                        
+                            <button class="navbtn footbtn">
+                                <b>Book Trial</b>
+                            </button>
+                         
         
                 </div>
             </section>
