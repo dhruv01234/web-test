@@ -11,6 +11,7 @@
     <style>
         body{
             background: url("images/home-img.jpeg");
+            background-size: 100%;
             background-attachment: fixed;
         }
         *{
@@ -115,6 +116,9 @@
     height: 180px;
     transition: 1s;
 }
+.item:hover{
+    opacity: 0.4;
+}
 .img{
     
     border-radius: 15px;
@@ -135,11 +139,11 @@
         
 
         .foot{
-            background-size: 100%;
             margin-top: 30px;
             height: 300px;
             width: 100%;
-            opacity: 0.6;
+            
+           
         }
         .overimg{
             display: absolute;
@@ -235,33 +239,9 @@ menu{
         background: #3B5998;
         color: white;
       }
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .3s ease;
-        background-color: red;
-      }
+    
       
-      .item:hover .overlay {
-        opacity: 1;
-      }
-      
-      .icon {
-        color: white;
-        font-size: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-      }
+
       
 }
     </style>
